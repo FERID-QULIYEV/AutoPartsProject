@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Manage\Data\" />
+    <Folder Include="Areas\Manage\Models\" />
+    <Folder Include="wwwroot\html_with_RTL\image\theme\home5\" />
+    <Folder Include="wwwroot\image\catalog\Advertisings\Image\" />
+    <Folder Include="wwwroot\image\catalog\blog\NewBlogImage\" />
+    <Folder Include="wwwroot\image\catalog\blog\NewBlogPageImage\" />
+    <Folder Include="wwwroot\image\catalog\brands\AddImage\" />
+    <Folder Include="wwwroot\image\catalog\BestSellerImage\CoverImage\" />
+    <Folder Include="wwwroot\image\catalog\BestSellerImage\InnerImage\" />
+    <Folder Include="wwwroot\image\catalog\NewArrivalmage\InnerImage\" />
+    <Folder Include="wwwroot\image\catalog\NewArrivalmage\CoverImage\" />
+    <Folder Include="wwwroot\image\catalog\IndexCategory\" />
+    <Folder Include="wwwroot\image\catalog\LastestProductImage\" />
+    <Folder Include="wwwroot\image\catalog\ProductImage\CoverImage\" />
+    <Folder Include="wwwroot\image\catalog\ProductImage\InnerImage\" />
+    <Folder Include="wwwroot\image\catalog\ProductImage\OtherImage\" />
+    <Folder Include="wwwroot\image\catalog\slideshow\ImageSlider\" />
+    <Folder Include="wwwroot\image\theme\home5\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.12" />
+  </ItemGroup>
+
+</Project>

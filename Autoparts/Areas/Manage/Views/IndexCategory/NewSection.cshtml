@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "NewSection";
+}
+
+@model SectionVM
+<div class="container">
+    <div class="card p-4">
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Section1"></label>
+                <input asp-for="Section1" class="form-control">
+                <span asp-validation-for="Section1" class="text-danger"></span>
+
+                <label asp-for="Section2"></label>
+                <input asp-for="Section2" class="form-control">
+                <span asp-validation-for="Section2" class="text-danger"></span>
+
+                <label asp-for="Section3"></label>
+                <input asp-for="Section3" class="form-control">
+                <span asp-validation-for="Section3" class="text-danger"></span>
+
+                <label asp-for="Section4"></label>
+                <input asp-for="Section4" class="form-control">
+                <span asp-validation-for="Section4" class="text-danger"></span>
+            </div>
+            <button class="btn btn-success" asp-action="NewSection">Submit</button>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+@model IndexCategoryVM
+<div class="container">
+    <div class="card p-4">
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Image"></label>
+                <input asp-for="Image" accept="image/*" class="form-control">
+                <span asp-validation-for="Image" class="text-danger"></span>
+
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control">
+                <span asp-validation-for="Name" class="text-danger"></span>
+
+                <label asp-for="SectionId"></label>
+                <input asp-for="SectionId" class="form-control">
+                <span asp-validation-for="SectionId" class="text-danger"></span>
+
+                <div>
+                    If you want new sections
+                    <button class="btn" asp-action="NewSection">click here</button>
+                </div>
+            </div>
+            <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+    </div>
+</div>

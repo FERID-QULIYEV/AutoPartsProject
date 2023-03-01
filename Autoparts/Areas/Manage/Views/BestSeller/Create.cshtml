@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+@model BestSellerVM
+<div class="container">
+    <div class="card p-4">
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="CoverImage"></label>
+                <input asp-for="CoverImage" accept="image/*" class="form-control">
+                <span asp-validation-for="CoverImage" class="text-danger"></span>
+
+                <label asp-for="InnerImage"></label>
+                <input asp-for="InnerImage" accept="image/*" class="form-control">
+                <span asp-validation-for="InnerImage" class="text-danger"></span>
+
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control">
+                <span asp-validation-for="Name" class="text-danger"></span>
+
+                <label asp-for="SellPrice"></label>
+                <input asp-for="SellPrice" class="form-control">
+                <span asp-validation-for="SellPrice" class="text-danger"></span>
+
+                <label asp-for="DiscountPrice"></label>
+                <input asp-for="DiscountPrice" class="form-control">
+                <span asp-validation-for="DiscountPrice" class="text-danger"></span>
+
+            </div>
+            <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+

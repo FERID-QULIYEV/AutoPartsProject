@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "NewSectionIndex";
+}
+@model IEnumerable<Section>
+<div class="container">
+    <a class="btn btn-primary" asp-action="NewSection">Create</a>
+    <table class="table table-bordered table-responsive">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Section1</th>
+                <th>Section2</th>
+                <th>Section3</th>
+                <th>Section4</th>
+                <th colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var sectionitem in (Model ?? new List<Section>()))
+            {
+                <td>@sectionitem.Id</td>
+                <td>@sectionitem.Section1</td>
+                <td>@sectionitem.Section2</td>
+                <td>@sectionitem.Section3</td>
+                <td>@sectionitem.Section4</td>
+                <td><a class="btn btn-danger" asp-action="NewSectionDelete" asp-route-id="@sectionitem.Id">Delete</a></td>
+            }
+        </tbody>
+    </table>
+</div>
